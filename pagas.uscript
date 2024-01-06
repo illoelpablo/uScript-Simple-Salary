@@ -1,0 +1,52 @@
+event onInterval(1800){
+
+    foreach(loopPlayer in server.players){
+        paga = 0;
+        if(loopPlayer.hasGroup("polagente")){
+            paga = 20000;
+            loopPlayer.message("Has recibido la paga, guardala en el banco para no perderla","green","https://i.imgur.com/DpxO3nT.png");
+        }
+        elseif(loopPlayer.hasGroup("polsuboficial")){
+            paga = 30000;
+            loopPlayer.message("Has recibido la paga, guardala en el banco para no perderla","green","https://i.imgur.com/DpxO3nT.png");
+        }
+        elseif(loopPlayer.hasGroup("poloficial")){
+            paga = 40000;
+            loopPlayer.message("Has recibido la paga, guardala en el banco para no perderla","green","https://i.imgur.com/DpxO3nT.png");
+        }
+        elseif(loopPlayer.hasGroup("auxiliar")){
+            paga = 10000;
+            loopPlayer.message("Has recibido la paga, guardala en el banco para no perderla","green","https://i.imgur.com/sQmGxLf.png");
+        }
+        elseif(loopPlayer.hasGroup("enfermero")){
+            paga = 14000;
+            loopPlayer.message("Has recibido la paga, guardala en el banco para no perderla","green","https://i.imgur.com/sQmGxLf.png");
+        }
+        elseif(loopPlayer.hasGroup("medico")){
+            paga = 20000;
+            loopPlayer.message("Has recibido la paga, guardala en el banco para no perderla","green","https://i.imgur.com/sQmGxLf.png");
+        }
+        elseif(loopPlayer.hasGroup("mecanico")){
+            paga = 11000;
+            loopPlayer.message("Has recibido la paga, guardala en el banco para no perderla","green","https://i.imgur.com/oz8hjHT.png");
+        }
+        loopPlayer.experience = loopPlayer.experience + paga; 
+
+    }
+}
+event onInterval(7200){
+
+    foreach(lloopPlayer in server.players){
+        paga = 0;
+        if(lloopPlayer.hasGroup("vip")){
+            paga = 25000;
+            lloopPlayer.message("Has recibido la paga, guardala en el banco para no perderla","green","https://i.imgur.com/DpxO3nT.png");
+        }
+        if(lloopPlayer.hasGroup("vipmas")){
+            paga = 35000;
+            lloopPlayer.message("Has recibido la paga, guardala en el banco para no perderla","green","https://i.imgur.com/DpxO3nT.png");
+        }
+        lloopPlayer.experience = lloopPlayer.experience + paga; 
+
+    }
+}
