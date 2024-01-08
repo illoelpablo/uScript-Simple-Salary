@@ -1,2 +1,2 @@
 # uScript-Simple-Salary
-uScript Plugin with a salary system. That is, just a salary system
+uScript Plugin with a salary system. Thats it, just a salary system
